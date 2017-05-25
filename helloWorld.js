@@ -55,6 +55,26 @@ command: git push origin master  [to push MASTER to ORIGIN repository on Github]
 		do a 'pull request' so that the owner of that real repository will analyze your changes. If they like, they can accept/merge 
 		your changes.
 		
+		
+command: git checkout -b <branch_name> (create new branch)
+
+command: git checkout <branch_name>    (move to another branch) 
+
+command: git branch -d <branch_name>   (delete branch - PS: checkout to other branch before deleting it)
+       
+command: git branch    (to show local branches and which branch you are)
+		 OR git branch -r (show all remore branches) 
+		 OR git branch -a (show all local and remote branches)
+		 
+		 
+MERGE: cria um commit novo (porem mantem a ordem cronologica dos commits)
+REBASE: joga as mudancas para o inicio da fila (linear, porem perde a ordem cronologica dos commits), nao criar commmits extras
+
+command: git pull --rebase [aconselhado quando feito o pull]
+
+command: on master do: 1) git merge <branch_name> (You will merge the branch on the master)
+		               2) Now do 'git push origin master' to push changes to the remote repository
+		
 
 
 
