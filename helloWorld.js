@@ -76,6 +76,8 @@ command: on master do: 1) git merge <branch_name> (You will merge the branch on 
 		               2) Now do 'git push origin master' to push changes to the remote repository
 		
 
+command: git rm <filename> (to remove a file and automatically stage it)
+		 OR delete manually and then: git add [filename]
 
 
 	
