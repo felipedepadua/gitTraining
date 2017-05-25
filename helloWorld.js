@@ -50,7 +50,10 @@ command: git remote (lista os repositorios remotos ligados)
 command: git push -u origin master  [to push MASTER to ORIGIN repository on Github]
 
 
-
+> Fork: you can use FORK to get a copy of a repository that you do not have permission to push changes.
+	    You should fork the repository, clone the forked repo to your machine, make changes and push them. After that, you can
+		do a 'pull request' so that the owner of that real repository will analyze your changes. If they like, they can accept/merge 
+		your changes.
 
 	
 		
