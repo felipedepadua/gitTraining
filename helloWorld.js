@@ -63,7 +63,8 @@ command: git checkout -b <branch_name> (create new branch)
 
 command: git checkout <branch_name>    (move to another branch) 
 
-command: git branch -d <branch_name>   (delete branch - PS: checkout to other branch before deleting it)
+command: git branch -D <branch_name>   (delete branch - PS: checkout to other branch before deleting it)
+		 Delete remote branches: https://www.git-tower.com/learn/git/faq/delete-remote-branch
        
 command: git branch    (to show local branches and which branch you are)
 		 OR git branch -r (show all remore branches) 
