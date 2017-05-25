@@ -4,7 +4,7 @@ Ola World!
 
 > Git: Created by Linus Torvalds
 
-> Git hooks: onde estao os triggers (p.ex. o git Lint que vai verificar qualidade do codigo quando feito o commit)
+> Git hooks: onde estao os triggers (p.ex. o git Lint que vai verificar qualidade do codigo quando feito o commit; Jenkins, etc.)
 > .gitconfig (arquivo config global onde estao as configuracoes de name, email, editor, etc)
 
 command: git rm --cached <file> to unstage
@@ -33,5 +33,24 @@ command: git reset --soft <commit hash>  (undo commit AND it will keep the modif
 command: git reset --mixed <commit hash> (undo commit AND it will keep the modifications from this commit AND leave unstaged)
 command: git reset --hard <commit hash>  (undo commit AND it will ignore all changes (it wont keep any modification))
 	- OBS: o hash que voce passa eh o commmit no qual voce quer retornar
-			
+
+	
+> Commandos para linkar a um repositorio remoto (Ver a aba 'Code' em https://github.com/shunnaidder/gitTraining):
+	command 1): git remote add origin git@github.com:shunnaidder/gitTraining.git
+    command 2): git push -u origin master ('origin' é para onde vai e 'master' é o branch de onde vem [a fazer push])
+				-PS: precisa ter a chave ssh:
+						- https://gist.github.com/developius/c81f021eb5c5916013dc
+							1) ssh-keygen -t rsa -C "your_email@example.com"
+							2) Copy the contents of the file ~/.ssh/id_rsa.pub to your SSH keys in your GitHub account settings
+							3) Go to GitHub on 'Settings' > 'SSH and GPG Keys' > 'New SSH key' and add the key 
+				
+				
+command: git remote (lista os repositorios remotos ligados)
+
+
+
+
+
+
+	
 		
