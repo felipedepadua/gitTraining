@@ -47,7 +47,7 @@ command: git reset --hard <commit hash>  (undo commit AND it will ignore all cha
 				
 command: git remote (lista os repositorios remotos ligados)
 
-command: git push -u origin master  [to push MASTER to ORIGIN repository on Github]
+command: git push origin master  [to push MASTER to ORIGIN repository on Github] (the -u is useful only th first time)
 
 
 > Fork: you can use FORK to get a copy of a repository that you do not have permission to push changes.
