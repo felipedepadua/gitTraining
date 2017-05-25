@@ -54,6 +54,9 @@ command: git push origin master  [to push MASTER to ORIGIN repository on Github]
 	    You should fork the repository, clone the forked repo to your machine, make changes and push them. After that, you can
 		do a 'pull request' so that the owner of that real repository will analyze your changes. If they like, they can accept/merge 
 		your changes.
+		
+
+
 
 	
 		
