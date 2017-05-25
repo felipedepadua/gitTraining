@@ -47,7 +47,7 @@ command: git reset --hard <commit hash>  (undo commit AND it will ignore all cha
 				
 command: git remote (lista os repositorios remotos ligados)
 
-
+command: git push -u origin master  [to push MASTER to ORIGIN repository on Github]
 
 
 
