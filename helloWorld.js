@@ -10,6 +10,7 @@ Ola World!
 command: git rm --cached <file> to unstage
 
 command: git checkout -- <file> OR git checkout . (remove all modifications. It returns to the way it was after the last COMMIT)
+		  PS: > git checkout <file> (tambem funciona. Desfaz as modificacoes)
 
 command: git config user.name ; git config user.email (to show email or name)
 
@@ -23,5 +24,9 @@ command: git diff (show the modifcations)
 			- You can also do: git diff <file-changed> <file to compare from another branch>
 			
 command: git diff --name-only (show only what files have been modified)
+
+command: git reset HEAD <file>  (to unstage)
+
+command: git commit -am "<message>" (ja faz "add ." e commit -m ) [VI: RECOMENDA-SE FAZER PASSO A PASSO]
 			
 		
