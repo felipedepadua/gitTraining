@@ -1,8 +1,8 @@
-Ola World! 
+Author: Felipe de Padua
 
 ----------------- RESUMO DE TRAINING:
 
-> Git: Created by Linus Torvalds
+> Git: Created by Linus Torvalds (mesmo que criou o Linux)
 
 > Git hooks: onde estao os triggers (p.ex. o git Lint que vai verificar qualidade do codigo quando feito o commit; Jenkins, etc.)
 > .gitconfig (arquivo config global onde estao as configuracoes de name, email, editor, etc)
