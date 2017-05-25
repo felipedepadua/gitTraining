@@ -21,7 +21,10 @@ command: git show <hash do commit> (p.ex: b8f24c6fcc429e30245ac3fd23f8997c1f5d40
 			- mostra as modificacoes que foram feitas naqule commit (similar ao DIFF)
 			
 command: git diff (show the modifcations)
-			- You can also do: git diff <file-changed> <file to compare from another branch>
+			- You can also do: git diff [filename]  (file to compare)
+			git diff HEAD // shows the list of changes after your last commit.
+			git diff --cached // shows the diff between your last commit and changes to be committed next.		 
+		 Check: https://veerasundar.com/blog/2011/06/git-tutorial-comparing-files-with-diff/
 			
 command: git diff --name-only (show only what files have been modified)
 
