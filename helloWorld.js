@@ -14,7 +14,7 @@ command: git checkout -- <file> OR git checkout . (remove all modifications. It 
 
 command: git config user.name ; git config user.email (to show email or name)
 
-command: git shortlog ; git log --author="<Felipe>" 
+command: git shortlog ; git log --author="Felipe" 
 command: git log --graph (shows graph so that you can check if there was a merge, rebase, etc.)
 
 command: git show <hash do commit> (p.ex: b8f24c6fcc429e30245ac3fd23f8997c1f5d4045)
@@ -72,21 +72,28 @@ command: git branch    (to show local branches and which branch you are)
 		 
 		 
 MERGE: cria um commit novo (porem mantem a ordem cronologica dos commits)
-REBASE: joga as mudancas para o inicio da fila (linear, porem perde a ordem cronologica dos commits), nao criar commmits extras
+REBASE: joga as mudancas para o inicio/topo da fila de commits (estrutura linear, porem perde a ordem cronologica dos commits), 
+        nao cria commmits extras
 
 command: git pull --rebase [aconselhado quando feito o pull]
 
 command: on master do: 1) git merge <branch_name> (You will merge the branch on the master)
 		               2) Now do 'git push origin master' to push changes to the remote repository
 		
+command: on master do: git rebase <branch_name> (i will rebase the branch on the master)
 
 command: git rm <filename> (to remove a file and automatically stage it)
 		 OR delete manually and then: git add [filename]
-
 
 	
 command: git stash (to save unstaged changes)
          - É quase como um "git checkout .", ou seja, ele remove as modificaçoes, porem ele guarda essas modificacoes para uso futuro
 		 - Exemplo Pratico: se voce sair da branch, voce vai perder as modificacoes. Entao, voce quer guardar as modificacoes para
 		   quando voltar, voce poder recupera-las
-		 > Para recuperar, command: git stash apply 		
+		 - * Exemplo Pratico 2: quando voce precisar dar um PULL, Git nao deixa fazer se tiver modificacoes. No entanto se voce der
+		     um "git checkout .", voce vai perder todas suas modificacoes. 
+			 Entao, voce pode dar "git stash", da o "git pull" e, entao, da "git stash apply"
+	> Para recuperar, command: git stash apply 	
+	> command: git stash list (ver a lista de stash, pois posso usar stash varias vezes)
+	> command: git stash clear (limpo o stash list)
+		 
