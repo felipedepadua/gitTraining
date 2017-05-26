@@ -85,4 +85,8 @@ command: git rm <filename> (to remove a file and automatically stage it)
 
 
 	
-		
+command: git stash (to save unstaged changes)
+         - É quase como um "git checkout .", ou seja, ele remove as modificaçoes, porem ele guarda essas modificacoes para uso futuro
+		 - Exemplo Pratico: se voce sair da branch, voce vai perder as modificacoes. Entao, voce quer guardar as modificacoes para
+		   quando voltar, voce poder recupera-las
+		 > Para recuperar, command: git stash apply 		
