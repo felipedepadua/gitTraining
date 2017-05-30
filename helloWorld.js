@@ -103,3 +103,14 @@ command: git stash (to save unstaged changes)
 // Entao, eu fiz o 'git stash' antes de dar pull. Depois do pull, fiz 'git stash apply'. Portanto, agora tenho as
 // modificacoes do PULL e STASH aqui
 		 
+command: git revert <commit hash>
+		  - faz um COMMIT revertendo as modificações daquele commit	
+			- EX: se voce fez um COMIIT a123... que adicionou uma linha X, o 'git revert <a123...>' faz um novo
+			      COMMIT que apaga essa linha X (Ele nao some com o COMMIT anterior que adicionou a linha X)
+				  Depois voce pode da um CHECKOUT para esse commit novamente p/ continuar trabalhando nele
+				    -> Voce pode verificar isso dando um 'git show <commit_hash_gerado_revert>'
+		PS: não é tao utilizado. 
+			-> Com comandos como o 'RESET --soft' e 'git stash'  voce consegue fazer algo similir.
+			
+command: git push origin :<branch_name> (to delete remote branch)
+			- git branch -d <branch_name> so apaga localmente
