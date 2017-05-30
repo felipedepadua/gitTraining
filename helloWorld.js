@@ -96,4 +96,8 @@ command: git stash (to save unstaged changes)
 	> Para recuperar, command: git stash apply 	
 	> command: git stash list (ver a lista de stash, pois posso usar stash varias vezes)
 	> command: git stash clear (limpo o stash list)
+
+// Modifiquei pelo Github.com e dei commmit para depois dar pull na maquina local. Porem, tambem tinha modificacao local. 
+// Entao, eu fiz o 'git stash' antes de dar pull. Depois do pull, fiz 'git stash apply'. Portanto, agora tenho as
+// modificacoes do PULL e STASH aqui
 		 
