@@ -1,0 +1,5 @@
+- Tutorial GIT: http://gitimmersion.com/
+
+Git e Github para Iniciantes: http://willianjusten.teachable.com/p/git-e-github-para-iniciantes
+
+- http://learngitbranching.js.org/
