@@ -1,0 +1,6 @@
+
+-> List of 5 short Videos on how to use SourceTree:
+	- https://www.youtube.com/playlist?list=PLpL2ONl1hMLtlY1Y7YJNcA5zumvaITLYs
+
+->(*) Solving-Conflict-Kdiff3-on-SourceTree
+    - https://www.youtube.com/watch?v=1b0v46Biwa8
