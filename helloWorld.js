@@ -114,3 +114,5 @@ command: git revert <commit hash>
 			
 command: git push origin :<branch_name> (to delete remote branch)
 			- git branch -d <branch_name> so apaga localmente
+			
+EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
