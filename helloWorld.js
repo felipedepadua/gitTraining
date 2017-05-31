@@ -116,3 +116,5 @@ command: git push origin :<branch_name> (to delete remote branch)
 			- git branch -d <branch_name> so apaga localmente
 			
 EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
+-> * Rebasing & Merging: https://www.youtube.com/watch?v=a_msiOrYLgM
+IMPORTANT!!!! Never forget the command: gitk
