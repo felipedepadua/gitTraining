@@ -115,6 +115,26 @@ command: git revert <commit hash>
 command: git push origin :<branch_name> (to delete remote branch)
 			- git branch -d <branch_name> so apaga localmente
 			
-EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
+
 -> * Rebasing & Merging: https://www.youtube.com/watch?v=a_msiOrYLgM
+
+----- VERY IMPORTANT:
+command: git pull --rebase
+   EX.1: Voce faz uma modificacao e faz um commit. Logo após, voce roda o 'git pull --rebase' que traz modificacoes que 
+         foram 'pushed' para o repositorio remoto mas ainda nao esta no local. 
+		 Entao, diferente de somente dar 'git pull', ele vai colocar o commit local no topo.
+		 PS: no entanto, vai dar CONFLICT, voce deve resolver o conflito (ex: git mergetool -t kdiff3) e entao dar
+		 o comando 'git rebase --continue'
+			  -	When you have resolved this problem, run "git rebase --continue".
+                If you prefer to skip this patch, run "git rebase --skip" instead.
+                To check out the original branch and stop rebasing, run "git rebase --abort".
+				
+		FINALLY: Após isso, voce vai ter pegado todas as mudancas e se der 'git status', vai ver que seu commit vai 
+                 estar no topo (1 commit ahead of origin/master) pronto para ser 'pushed'.		
+				 
+	SOURCE: https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/
+-----
+
 IMPORTANT!!!! Never forget the command: gitk
+
+EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
