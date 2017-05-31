@@ -138,3 +138,7 @@ command: git pull --rebase
 IMPORTANT!!!! Never forget the command: gitk
 
 EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
+
+--- (EXTRA) Github vs GitLab [git repositories]: 
+	- https://usersnap.com/blog/gitlab-github/
+	- * https://www.upwork.com/hiring/development/gitlab-vs-github-how-are-they-different/
