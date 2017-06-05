@@ -35,7 +35,7 @@ command: git commit -am "<message>" (ja faz "add ." e commit -m ) [VI: RECOMENDA
 command: git reset --soft <commit hash>  (undo commit AND it will keep the modifications from this commit AND stage them)
 command: git reset --mixed <commit hash> (undo commit AND it will keep the modifications from this commit AND leave unstaged)
 command: git reset --hard <commit hash>  (undo commit AND it will ignore all changes (it wont keep any modification))
-	- OBS: o hash que voce passa eh o commmit no qual voce quer retornar
+	- OBS: o hash que voce passa eh o commmit no qual voce quer retornar. O valor default do 'reset' é '--mixed'
 
 	
 > Commandos para linkar a um repositorio remoto (Ver a aba 'Code' em https://github.com/shunnaidder/gitTraining):
@@ -127,7 +127,20 @@ command: git log --stat (to see summary of files changed)
 
 > you can COMMIT things and PUSH to respostory
   - After that, you can still make modifications and then do 'git commit --amend -m "<message>"'
-	PS: however, you might get a CONFLICT which you will need to solve
+	PS: however, you get a CONFLICT which you will need to solve
+	
+	- SOURCE: https://www.youtube.com/watch?v=FdZecVxzJbk (The beggining ofthe video)
+	
+> Cherry-pick:
+	- create a commit from a branch to another branch 
+	  EX. CASE: Lets say you commited something in the wrong branch (say the master) that was supposed to be in the 'dvelop' branch.
+				What you can do to fix this issue:
+				1) 'git log' and Copy the commit hash that you want to "paste" in the develop branch.
+				2) Switch to the develop branch ('git checkout develop')
+			    3) Then, you can do 'git cherry-pick <commit_hash>'.  (The commit will be added to the top of this branch)
+				4) Lastly, you switch back to the master branch and reset to the previous commit to undo the mistaken commit.
+	
+		- SOURCE: https://www.youtube.com/watch?v=FdZecVxzJbk (Starts at 07:37)
 			
 ----- VERY IMPORTANT:
 command: git pull --rebase
@@ -145,6 +158,8 @@ command: git pull --rebase
 				 
 	SOURCE: https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/
 -----
+
+> Merge Conflict? Use: "git mergetool -t kdiff3" (using kdiff3)
 
 IMPORTANT!!!! Never forget the command: gitk
 
