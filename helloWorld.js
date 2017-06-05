@@ -124,6 +124,9 @@ command: git commit --amend -m "message that will substitute the current commit"
 			PS: you might not notice, but the commit hash will change (thats how gerrit creates the concept o patchset)
 
 command: git log --stat (to see summary of files changed)
+
+> you can COMMIT things and PUSH to respostory
+ 
 			
 ----- VERY IMPORTANT:
 command: git pull --rebase
