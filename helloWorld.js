@@ -127,6 +127,7 @@ command: git log --stat (to see summary of files changed)
 
 > you can COMMIT things and PUSH to respostory
   - After that, you can still make modifications and then do 'git commit --amend -m "<message>"'
+	PS: however, you might get a CONFLICT which you will need to solve
 			
 ----- VERY IMPORTANT:
 command: git pull --rebase
