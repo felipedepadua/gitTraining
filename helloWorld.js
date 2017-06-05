@@ -118,6 +118,11 @@ command: git push origin :<branch_name> (to delete remote branch)
 
 -> * Rebasing & Merging: https://www.youtube.com/watch?v=a_msiOrYLgM
 
+
+command: git commit --amend -m "message that will substitute the current commit"
+		    - you can also add more code before doing the command above and it will also be included in the commit
+			PS: you might not notice, but the commit hash will change (thats how gerrit creates the concept o patchset)
+
 ----- VERY IMPORTANT:
 command: git pull --rebase
    EX.1: Voce faz uma modificacao e faz um commit. Logo após, voce roda o 'git pull --rebase' que traz modificacoes que 
