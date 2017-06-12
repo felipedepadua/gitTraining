@@ -11,6 +11,8 @@ command: git rm --cached <file> to unstage
 
 command: git checkout -- <file> OR git checkout . (remove all modifications. It returns to the way it was after the last COMMIT)
 		  PS: > git checkout <file> (tambem funciona. Desfaz as modificacoes)
+		  
+command: git clean -f (apaga todos arquivos untracked)
 
 command: git config user.name ; git config user.email (to show email or name)
 
