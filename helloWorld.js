@@ -30,6 +30,9 @@ command: git diff --name-only (show only what files have been modified)
 
 command: git reset HEAD <file>  (to unstage)
 
+command: git checkout HEAD~2 (goes back to commits, to return to the head commit, just do checkout on the branch)
+		 - To come back to the branch head you just need to checkout to your master branch again
+
 command: git commit -am "<message>" (ja faz "add ." e commit -m ) [VI: RECOMENDA-SE FAZER PASSO A PASSO]
 
 command: git reset --soft <commit hash>  (undo commit AND it will keep the modifications from this commit AND stage them)
