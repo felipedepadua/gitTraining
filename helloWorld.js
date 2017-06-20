@@ -41,7 +41,7 @@ command: git reset --soft <commit hash>  (undo commit AND it will keep the modif
 command: git reset --mixed <commit hash> (undo commit AND it will keep the modifications from this commit AND leave unstaged)
 command: git reset --hard <commit hash>  (undo commit AND it will ignore all changes (it wont keep any modification))
 	- OBS: o hash que voce passa eh o commmit no qual voce quer retornar. O valor default do 'reset' é '--mixed'
-
+	EX: command: git reset HEAD~1 (reseta para o ultimo Commit)
 	
 > Commandos para linkar a um repositorio remoto (Ver a aba 'Code' em https://github.com/shunnaidder/gitTraining):
 	command 1): git remote add origin git@github.com:shunnaidder/gitTraining.git
