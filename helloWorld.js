@@ -100,6 +100,7 @@ command: git stash (to save unstaged changes)
 		     um "git checkout .", voce vai perder todas suas modificacoes. 
 			 Entao, voce pode dar "git stash", da o "git pull" e, entao, da "git stash apply"
 	> Para recuperar, command: git stash apply 	
+	> You can also use 'git stash pop' (Ver diferenca: https://git-scm.com/docs/git-stash)
 	> command: git stash list (ver a lista de stash, pois posso usar stash varias vezes)
 	> command: git stash clear (limpo o stash list)
 
