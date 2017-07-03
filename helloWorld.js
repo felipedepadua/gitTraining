@@ -101,6 +101,7 @@ command: git stash (to save unstaged changes)
 			 Entao, voce pode dar "git stash", da o "git pull" e, entao, da "git stash apply"
 	> Para recuperar, command: git stash apply 	
 	> You can also use 'git stash pop' (Ver diferenca: https://git-scm.com/docs/git-stash)
+		- GET A SPECIFIC STASH: git stash apply stash@{2} (https://git-scm.com/book/en/v1/Git-Tools-Stashing)
 	> command: git stash list (ver a lista de stash, pois posso usar stash varias vezes)
 	> command: git stash clear (limpo o stash list)
 
@@ -165,6 +166,8 @@ command: git pull --rebase
 				 
 	SOURCE: https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/
 -----
+
+-> "git remote prune origin" pra corrigir as referências de branches (problema ao dar PULL)
 
 > Merge Conflict? Use: "git mergetool -t kdiff3" (using kdiff3)
 
