@@ -1,0 +1,21 @@
+
+> git pull origin dev 
+  (To pull from the dev branch from origin[Bitbucket repo] to the branch you are)
+
+
+---- ACQUIA: 
+[You will not 'pull' from acquia, only 'push']
+
+Push dev (branch) to acquia (another remote location [repository]):
+> git push acquia dev
+
+
+> git remote (to list remote repositories)
+   PS: git automatically creates a remote named "origin" and points to it
+
+
+
+-> Add Acquia as a remote repository:
+   1) Login to Acquia > click on umdarhu > click on Dev > Copy the <Git URL>
+   2) git remote add acquia <Git URL>  ('acquia' is a name you chose for the repo)
+   3) Then you can do: git push acquia dev
