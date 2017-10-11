@@ -58,6 +58,13 @@ command: git remote (lista os repositorios remotos ligados)
 command: git push origin master  [to push MASTER to ORIGIN repository on Github] (the -u is useful only th first time)
 		- git push  <REMOTENAME> <BRANCHNAME> 
 		SOURCE: https://help.github.com/articles/pushing-to-a-remote/
+		
+		- Push to a different branch name:
+		- Normally when I do a push in git I do something like git push origin master, which really means push from
+		the local branch named master to the remote branch named master. If you want to push to a remote branch with
+		a different name than your local branch, separate the local and remote names with a colon:
+			> git push origin local-name:remote-name
+		SOURCE: https://penandpants.com/2013/02/07/git-pushing-to-a-remote-branch-with-a-different-name/
 
 
 > Fork: you can use FORK to get a copy of a repository that you do not have permission to push changes.
