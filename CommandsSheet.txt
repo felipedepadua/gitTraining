@@ -83,6 +83,10 @@ command: git checkout <branch_name>    (move to another branch)
 
 command: git branch -D <branch_name>   (delete branch - PS: checkout to other branch before deleting it)
 		 Delete remote branches: https://www.git-tower.com/learn/git/faq/delete-remote-branch
+		 
+command: git push origin --delete <branch> (to delete remote branch. 
+         (You can run the command above to delete the local branch and then this one to remove remote branch) 
+	SOURCE: https://www.git-tower.com/learn/git/faq/delete-remote-branch
        
 command: git branch    (to show local branches and which branch you are)
 		 OR git branch -r (show all remore branches) 
