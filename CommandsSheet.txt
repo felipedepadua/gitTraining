@@ -96,6 +96,20 @@ command: git branch    (to show local branches and which branch you are)
 MERGE: cria um commit novo (porem mantem a ordem cronologica dos commits)
 REBASE: joga as mudancas para o inicio/topo da fila de commits (estrutura linear, porem perde a ordem cronologica dos commits), 
         nao cria commmits extras
+	
+	Atlassian: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+	
+	REBASE:
+	> git checkout feature
+	> gir rebase master
+	: This moves the entire feature branch to begin on the tip of the master branch, effectively 
+	incorporating all of the new commits in master
+	
+	MERGE: 
+	> git checkout feature
+	> gir merge master
+	Or, you can condense this to a one-liner:
+	> git merge master feature
 
 command: git pull --rebase [aconselhado quando feito o pull]
 
