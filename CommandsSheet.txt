@@ -194,3 +194,5 @@ EXTRA: gerrithub.io (Repo that combines Gerrit and Github)
 --- (EXTRA) Github vs GitLab [git repositories]: 
 	- https://usersnap.com/blog/gitlab-github/
 	- * https://www.upwork.com/hiring/development/gitlab-vs-github-how-are-they-different/
+	
+- (*) Atlassian's GIT Tutorial:  https://www.atlassian.com/git/tutorials/syncing
