@@ -198,6 +198,14 @@ command: git pull --rebase
 				 
 	SOURCE: https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/
 -----
+Git Fetch (Megan):
+one way to get the new dev branch is to first delete your local dev branch
+ - first make sure you are NOT on dev branch, so switch to a different branch
+ - then run the command: git branch -d dev (this will delete your local dev)
+ - then do: git fetch origin dev
+ - git checkout dev (if you want to switch to dev branch)
+
+----
 
 -> "git remote prune origin" pra corrigir as referências de branches (problema ao dar PULL)
 
