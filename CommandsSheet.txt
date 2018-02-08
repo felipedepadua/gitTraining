@@ -46,6 +46,8 @@ command: git reset --hard <commit hash>  (undo commit AND it will ignore all cha
 	- OBS: o hash que voce passa eh o commmit no qual voce quer retornar. O valor default do 'reset' é '--mixed'
 	EX: command: git reset HEAD~1 (reseta para o ultimo Commit)
 	
+	(*) Undoing Commits & Changes: https://www.atlassian.com/git/tutorials/undoing-changes
+	
 > Commandos para linkar a um repositorio remoto (Ver a aba 'Code' em https://github.com/shunnaidder/gitTraining):
 	command 1): git remote add origin git@github.com:shunnaidder/gitTraining.git
     command 2): git push -u origin master ('origin' é para onde vai e 'master' é o branch de onde vem [a fazer push])
