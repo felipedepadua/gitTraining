@@ -7,6 +7,9 @@ Author: Felipe de Padua
 > Git hooks: onde estao os triggers (p.ex. o git Lint que vai verificar qualidade do codigo quando feito o commit; Jenkins, etc.)
 > .gitconfig (arquivo config global onde estao as configuracoes de name, email, editor, etc)
 
+Git Pull: https://www.atlassian.com/git/tutorials/syncing (Go to the 'Git Pull' part)
+	- It shows 'Git pull --rebase'(which is a common practice)
+
 command: git rm --cached <file> to unstage
 
 command: git checkout -- <file> OR git checkout . (remove all modifications. It returns to the way it was after the last COMMIT)
