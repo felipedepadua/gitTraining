@@ -9,6 +9,12 @@ Author: Felipe de Padua
 
 Git Pull: https://www.atlassian.com/git/tutorials/syncing (Go to the 'Git Pull' part)
 	- It shows 'Git pull --rebase'(which is a common practice)
+	
+Pull from other Branch: If you, say, created a branch off master. 
+	-command: git pull (brings the changes from the repository with same branch name you are) 
+		- Ex: if branch is called my_branch, git pull = git pull origin my_branch
+	-command: git pull origin master (brings the changes from the repository from MASTER and add to the local my_branch)
+		- Ex: You may need that when somebody pushed recent changes to master (and you want my_branch to get those changes as well)
 
 command: git rm --cached <file> to unstage
 
