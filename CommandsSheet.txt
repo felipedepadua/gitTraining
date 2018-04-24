@@ -218,6 +218,8 @@ one way to get the new dev branch is to first delete your local dev branch
 
 ----
 
+command: git remote -v (To see where you are pushing to/fetching from) 
+
 -> "git remote prune origin" pra corrigir as referências de branches (problema ao dar PULL)
 
 > Merge Conflict? Use: "git mergetool -t kdiff3" (using kdiff3)
