@@ -192,6 +192,12 @@ command: git log --stat (to see summary of files changed)
 				4) Lastly, you switch back to the master branch and reset to the previous commit to undo the mistaken commit.
 	
 		- SOURCE: https://www.youtube.com/watch?v=FdZecVxzJbk (Starts at 07:37)
+		
+> Reset local master branch to be just like remote repository HEAD:
+	1) First make sure you have all the latest code from remote:
+		command:  git fetch origin
+	2) Now run this to undo any changes (commits) you have and reset it to be equal to remote's master branch:
+		command: git reset --hard origin/master
 			
 ----- VERY IMPORTANT:
 command: git pull --rebase
