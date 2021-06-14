@@ -224,6 +224,14 @@ one way to get the new dev branch is to first delete your local dev branch
 
 ----
 
+Force MASTER branch to update to be just like 'develop' branch (this will rewrite commit history):
+	1) > git checkout master
+	2) > git reset --hard develop
+	3) > git push --force
+	SOURCE: https://superuser.com/questions/716818/how-to-overwrite-a-branch-in-git-with-master
+
+----
+
 command: git remote -v (To see where you are pushing to/fetching from) 
 
 -> "git remote prune origin" pra corrigir as referências de branches (problema ao dar PULL)
